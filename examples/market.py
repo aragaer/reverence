@@ -19,7 +19,7 @@ cmc = cachemgr.LoadCacheFolder("CachedMethodCalls")
 print "Deleting old records... \n"
 for root, dirs, files in os.walk(OUTPATH, topdown=False):
     for name in files:
-    os.remove(os.path.join(root, name))
+        os.remove(os.path.join(root, name))
 
 
 for key, obj in cmc.iteritems():
